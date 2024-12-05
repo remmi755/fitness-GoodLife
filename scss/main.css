@@ -1,3 +1,14 @@
+body {
+  --text: #252525;
+  --sec1: #424242;
+  --sec2: #858585;
+  --sec3: #D2D2D2;
+  --sec4: #EDEDED;
+  --ac: #E43071;
+  --subAc: #FFC1D8;
+  --outBg: #FFDAE7;
+}
+
 @font-face {
   font-family: "Manrope";
   src: url("../../fonts/Manrope/Manrope-Semibold.woff2") format("woff2");
@@ -360,6 +371,7 @@ input:focus {
   width: 2.1875rem;
   height: 2.1875rem;
   position: absolute;
+  background-color: transparent;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
