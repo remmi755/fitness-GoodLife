@@ -1,0 +1,27 @@
+//.svg-inst {
+//  fill: #E43071;
+//  width: remy(40);
+//  height: remy(40);
+//}
+//
+//.svg-inst:hover {
+//  fill:aquamarine;
+//}
+
+.svg-search {
+  fill: currentColor;
+  width: remy(20);
+  height: remy(20);
+  transform: rotate(90deg);
+}
+
+.svg-xmark {
+  fill: $sec2;
+  width: remy(40);
+  height: remy(40);
+
+  @media (max-width: remy(767)) {
+    width: remy(25);
+    height: remy(25);
+  }
+}

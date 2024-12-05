@@ -1,0 +1,123 @@
+.btn, .btn-outline {
+  display: inline-block;
+  min-width: remy(237);
+  height: remy(68);
+  line-height: remy(68);
+  border-radius: remy(34);
+  text-align: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--ac);
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+
+  @media (max-width: remy(991)) {
+    height: remy(56);
+    line-height: remy(56);
+  }
+  @media (max-width: remy(767)) {
+    width: 100%;
+    max-width: remy(288);
+  }
+
+}
+
+.btn:hover {
+  background-color: var(--darkAc);
+}
+
+.btn:focus {
+  background-color: var(--darkAc);
+  outline: remy(9) solid var(--outBg);
+}
+
+.btn-outline {
+  line-height: remy(64);
+  background-color: white;
+  color: var(--ac);
+  border: remy(2) solid var(--ac);
+
+  @media (max-width: remy(991)) {
+    height: remy(60);
+  }
+}
+
+.btn-outline__slim {
+  height: remy(50);
+  line-height: remy(46);
+  min-width: remy(166);
+  font-weight: 400;
+}
+
+.btn-outline:hover {
+  border-color: var(--darkAc);
+  color: var(--darkAc);
+}
+
+.btn-outline:focus {
+  border: remy(2) solid var(--ac);
+  background-color: white;
+  color: var(--ac);
+  //outline: remy(9) solid var(--outBg);
+  outline: remy(9) solid var(--outBr);
+}
+
+.btn-outline.btn-outline__slim:focus {
+  outline: remy(5) solid var(--outBr);
+}
+
+.search-open {
+  height: remy(50);
+  display: flex;
+  align-items: center;
+  gap: remy(6);
+  color: white;
+  background-color: transparent;
+  transition: .3s;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  @media (max-width: remy(574)) {
+    span {
+      display: none;
+    }
+  }
+}
+
+.back-top {
+  position: fixed;
+  bottom: remy(80);
+  right: remy(40);
+  z-index: -1;
+  width: remy(40);
+  height: remy(40);
+  border-radius: 50%;
+  background-color: var(--ac);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .3s;
+
+  svg {
+    fill: white;
+    width: remy(24);
+    height: remy(24);
+  }
+
+  &.back-top--visible {
+    opacity: 1;
+    z-index: 6;
+  }
+
+  @media (max-width: remy(767)) {
+    bottom: remy(40);
+    right: remy(16);
+  }
+
+}

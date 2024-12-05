@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('../../fonts/Manrope/Manrope-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../../fonts/Manrope/Manrope-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../../fonts/Manrope/Manrope-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/OpenSans/OpenSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../fonts/Poppins/Poppins-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../fonts/Poppins/Poppins-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../fonts/Poppins/Poppins-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../fonts/Poppins/Poppins-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Times New Roman MT Std';
+  src: url('../../fonts/TimesNewRoman/TimesNewRomanMTStd-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@function remy($pxsize) {
+  @return calc(($pxsize/16))+rem
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  --ac: #E43071;
+  --subAc: #FFC1D8;
+  --outBr: #FFDAE7;
+  --darkAc: #BE285E;
+  --decoreColor: #f8c5d7;
+}
+
+body.green-theme {
+  --ac: #26D68A;
+  --subAc: #9BE8C7;
+  --outBr: #a1e7c9;
+  --darkAc: #0b9056;
+  --decoreColor: #8fc089;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: $sec1;
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+a {
+  display: inline-block;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+button,
+a {
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+button,
+input,
+button:focus,
+input:focus {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  //background: none;
+  padding: 0;
+}
+
+*.section-pb {
+  padding-block: remy(64) remy(71);
+
+  @media (max-width: remy(991)) {
+    padding-block: remy(50) remy(60);
+  }
+  @media (max-width: remy(768)) {
+    padding-block: remy(35) remy(23);
+  }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: remy(1260);
+  margin: 0 auto;
+  padding-inline: remy(50);
+
+  @media (max-width: 1199px) {
+    padding-inline: remy(30);
+  }
+
+  @media (max-width: 767px) {
+    padding-inline: remy(16);
+  }
+
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,157 @@
+.footer {
+  padding-block: remy(92) remy(24);
+  background-color: $footerBg;
+  color: $footerText;
+  font-size: remy(14);
+  line-height: 1.71;
+  font-family: "Manrope", sans-serif;
+
+  &-row {
+    display: flex;
+    gap: remy(40);
+
+    @media (max-width: remy(1199)) {
+      gap: remy(20);
+    }
+
+    @media (max-width: remy(767)) {
+      flex-direction: column;
+      gap: remy(40);
+    }
+  }
+
+  &-row--justify {
+    margin-top: remy(105);
+    justify-content: space-between;
+
+    @media (max-width: remy(1199)) {
+      margin-top: remy(75);
+    }
+
+    @media (max-width: remy(767)) {
+      flex-direction: column-reverse;
+      gap: remy(16);
+      margin-top: remy(25);
+    }
+  }
+
+  &-col {
+    width: remy(255);
+  }
+
+  &-social {
+    display: flex;
+    align-items: center;
+    gap: remy(16);
+
+    a {
+      width: remy(24);
+      height: remy(24);
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: .3s;
+
+      &:hover {
+        background-color: var(--ac);
+      }
+    }
+
+    svg {
+      fill: white;
+    }
+  }
+
+  &-menu {
+    width: remy(255);
+  }
+
+  &-menu__list {
+    li + li {
+      margin-top: remy(12);
+    }
+
+  }
+
+  .contacts-list a, &-menu__list a {
+    transition: .3s;
+
+    &:hover {
+      color: var(--ac);
+    }
+  }
+  &-privacy {
+    text-align: center;
+    a {
+      padding-inline: remy(8);
+      line-height: 1;
+      transition: .3s;
+
+        &:hover {
+            color: white;
+        }
+    }
+    a:first-child {
+      padding-left: 0;
+    }
+    a:last-child {
+      padding-right: 0;
+    }
+    a + a {
+      border-left: 1px solid $footerText;
+    }
+    @media (max-width: remy(767)) {
+      a{
+        margin-top: remy(10);
+      }
+      a+a {
+        border-left:none;
+      }
+      a:nth-child(even) {
+        border-left: 1px solid $footerText;
+      }
+
+    }
+  }
+
+  @media (max-width: remy(767)) {
+    .container{
+      width: remy(255);
+      padding: 0;
+    }
+
+  }
+}
+
+.contacts-list {
+  li + li {
+    margin-top: remy(24);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    fill: var(--ac);
+    vertical-align: middle;
+    margin-right: remy(10);
+  }
+
+}
+
+.logo.logo__footer {
+  font-size: remy(25);
+
+  .accent-span {
+    color: var(--ac);
+  }
+}
+
+.mb-24 {
+  margin-bottom: remy(24);
+}

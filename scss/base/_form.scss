@@ -1,0 +1,68 @@
+.form-item {
+  position: relative;
+
+  input {
+    width: 100%;
+    font-size: 1rem;
+    display: block;
+    height: remy(50);
+    border: remy(1) solid $sec3;
+    border-radius: remy(5);
+    color: $sec2;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+    color: $sec3;
+  }
+}
+
+.search-form {
+  gap: remy(70);
+  width: 100%;
+
+  .form-item {
+    width: 100%;
+  }
+
+  .search-btn, .reset-btn {
+    width: remy(35);
+    height: remy(35);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    &>*{
+      vertical-align: middle;
+    }
+  }
+
+  .search-btn {
+    left: remy(4);
+
+    .svg-search {
+      width: remy(35);
+      height: remy(35);
+      fill: var(--ac);
+
+      @media (max-width: remy(767)) {
+        width: remy(25);
+        height: remy(25);
+      }
+    }
+  }
+
+  .reset-btn {
+    right: remy(4);
+  }
+
+  input{
+    padding-inline: remy(50);
+
+    @media (max-width: remy(767)) {
+      padding-inline: remy(40);
+    }
+  }
+}
+

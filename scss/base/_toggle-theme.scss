@@ -1,0 +1,44 @@
+.toggle-theme {
+  position: fixed;
+  top: remy(38);
+  right: remy(40);
+  z-index: 6;
+  display: inline-block;
+  width: remy(60);
+  height: remy(24);
+  border: 1px solid $sec2;
+  border-radius: remy(15);
+  background-color: $sec3;
+  cursor: pointer;
+
+  &__dot{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: remy(24);
+    border-radius: 50%;
+    background-color: var(--ac);
+
+  }
+
+  &__input{
+    width: 0.1em;
+    height: 0.1em;
+    opacity: 0;
+  }
+
+  &__input:checked + span{
+    left: auto;
+    right: 0;
+  }
+
+  @media (max-width: remy(1599)) {
+    top: remy(135);
+  }
+  @media (max-width: remy(991)) {
+    top: remy(80);
+    right: remy(10);
+
+  }
+}

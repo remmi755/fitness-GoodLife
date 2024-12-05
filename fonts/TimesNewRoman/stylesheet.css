@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Times New Roman MT Std';
+    url('TimesNewRomanMTStd-Bold.woff2') format('woff2'),
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

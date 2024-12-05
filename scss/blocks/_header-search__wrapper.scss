@@ -1,0 +1,26 @@
+.header_seach__wrapper {
+  position: absolute;
+  top: remy(-20);
+  left: 0;
+  right: 0;
+  z-index: 4;
+  padding-block: remy(24);
+  background-color: white;
+  box-shadow: 0 remy(7) remy(15) rgba(0, 0, 0, .1);
+  transition: .3s;
+
+  &.search-form-open {
+    top: remy(101);
+    z-index: 2;
+  }
+
+  @media(max-width: remy(991)) {
+    padding-block: remy(16);
+
+    &.search-form-open {
+      top: remy(64);
+    }
+
+    
+  }
+}

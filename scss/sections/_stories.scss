@@ -1,0 +1,259 @@
+.stories {
+  padding-top: remy(130);
+  padding-bottom: remy(80);
+  background: linear-gradient(180deg, #fff 0%, #f4e3e9 100%);
+
+  &-content {
+    width: 100%;
+    max-width: remy(955);
+    margin: 0 auto;
+
+    @media (max-width: remy(991)) {
+      padding: 0 remy(16);
+    }
+
+    @media (max-width: remy(767)) {
+      padding: 0 remy(28);
+    }
+  }
+
+  &__title {
+    margin-bottom: remy(25);
+
+    .h3 {
+      line-height: 1.19;
+      margin-bottom: remy(14);
+    }
+
+    p {
+      font-size: remy(18);
+    }
+
+    @media (max-width: remy(767)) {
+      padding-left: remy(3);
+
+      .h3 {
+        margin-bottom: remy(6);
+      }
+      p {
+        font-size: remy(9);
+      }
+    }
+  }
+  @media (max-width: remy(991)) {
+    overflow-x: hidden;
+    padding-top: remy(60);
+    padding-bottom: remy(35);
+  }
+}
+
+.stories-cards-wrapper {
+  padding-left: remy(97);
+  padding-bottom: remy(68);
+  display: flex;
+  gap: remy(33);
+  position: relative;
+  align-items: flex-start;
+
+  @media (max-width: remy(991)) {
+    align-items: stretch;
+    gap: remy(27);
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}
+
+.stories-card {
+  width: remy(349);
+  flex-shrink: 0;
+  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.18);
+  background: #fff;
+  border-radius: remy(10);
+  padding: remy(32) remy(32) remy(38) remy(27);
+
+  .h5 {
+    color: var(--ac);
+    margin-bottom: remy(18);
+  }
+
+  &__text {
+    font-size: remy(18);
+    line-height: 1.78;
+    padding-left: remy(37);
+    margin-top: remy(12);
+    margin-bottom: remy(18);
+    position: relative;
+
+    strong {
+      position: absolute;
+      left: 0;
+      top: -8px;
+      font-family: "Times New Roman";
+      font-size: remy(58);
+      color: var(--decoreColor);
+      line-height: 1;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    gap: remy(17);
+    align-items: center;
+    padding-left: remy(39);
+  }
+
+  &__img {
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__name {
+    p {
+      font-weight: 600;
+      font-size: remy(18);
+    }
+
+    span {
+      display: block;
+      font-size: remy(14);
+      color: #969bab;
+    }
+  }
+
+  @media (max-width: remy(991)) {
+  }
+}
+
+.stories-card:nth-child(2) {
+  margin-top: remy(-147);
+  width: remy(449);
+  padding: remy(46) remy(32) remy(38) remy(34);
+
+  .h5 {
+    color: var(--ac);
+    margin-bottom: 11px;
+  }
+
+  .stories-card__text {
+    padding-left: remy(29);
+    margin-top: remy(11);
+    margin-bottom: remy(12);
+
+    strong {
+      left: remy(-8);
+      top: remy(-14);
+    }
+  }
+
+  .stories-card__footer {
+    gap: 1.0625rem;
+    align-items: center;
+    padding-left: 2rem;
+  }
+
+  @media (max-width: remy(991)) {
+    margin-top: 0;
+  }
+}
+
+.stories-card:nth-child(3) {
+  width: remy(351);
+  padding: remy(22) remy(31) remy(31) remy(37);
+  position: absolute;
+  bottom: 0;
+  right: remy(127);
+
+  .stories-card__text {
+    padding-left: remy(28);
+    margin-top: remy(25);
+
+    strong {
+      left: remy(-9);
+      top: remy(-9);
+    }
+  }
+
+  .stories-card__footer {
+    align-items: center;
+    padding-left: remy(32);
+  }
+
+  @media (max-width: remy(991)) {
+    position: relative;
+    right: auto;
+    bottom: auto;
+
+    .stories-card__text {
+      margin-top:remy(11);
+    }
+  }
+
+  @media (max-width: remy(767)) {
+    margin-right: remy(20);
+  }
+}
+
+@media (max-width: remy(991)) {
+  .stories-card,
+  .stories-card:nth-child(2),
+  .stories-card:nth-child(3) {
+    padding: remy(24) remy(22) remy(26) remy(19);
+    width: remy(243);
+    display: flex;
+    flex-direction: column;
+
+    .h5 {
+      width: 100%;
+      font-size: remy(26);
+      margin-bottom: remy(20);
+
+    }
+
+    .stories-card__text {
+      width: 100%;
+
+      flex-grow: 1;
+      padding-left: remy(25);
+      font-size: remy(12);
+      margin-bottom: remy(12);
+
+      strong {
+        font-size: remy(26);
+        top: remy(-3);
+        left: remy(6);
+      }
+    }
+
+    .stories-card__footer {
+      width: 100%;
+      gap: remy(13);
+      padding-left: remy(25);
+    }
+
+    .stories-card__img {
+      width: remy(41);
+      height: remy(40);
+    }
+
+    .stories-card__name {
+      p {
+        font-size: remy(12);
+      }
+
+      span {
+        font-size: remy(9);
+      }
+    }
+  }
+  .stories-cards-wrapper {
+    width:calc(50% + 50vw);
+    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+

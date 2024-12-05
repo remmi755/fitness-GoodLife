@@ -1,0 +1,57 @@
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: remy(40);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-right: auto;
+  color: white;
+
+  @media (max-width: remy(1199)) {
+    font-size: remy(32);
+  }
+  @media (max-width: remy(574)) {
+    font-size: remy(22);
+  }
+}
+
+.header-container {
+  width: 100%;
+  max-width: remy(1390);
+  padding-inline: remy(16);
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+}
+
+.header-nav {
+  height: remy(101);
+  background-color: var(--ac);
+  position: relative;
+  z-index: 5;
+
+  &__btn {
+    gap: remy(40);
+    margin-left: remy(73);
+
+    @media (max-width: remy(1439)) {
+      margin-left: 2.5rem;
+    }
+    @media (max-width: remy(1199)) {
+      margin-left: 1.5rem;
+      gap: 1.5rem;
+    }
+    @media (max-width: remy(991)) {
+      .btn-outline {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: remy(991)) {
+   height: remy(64);
+  }
+
+}
+

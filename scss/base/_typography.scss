@@ -1,0 +1,86 @@
+.h1, h2, .h4 {
+  font-size: remy(70);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: remy(60);
+}
+
+.h3, h5 {
+  font-size: remy(48);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.h4 {
+  font-size: remy(40);
+  line-height: 1.5;
+}
+
+.h5 {
+  font-size: remy(38);
+}
+
+.subtitle {
+  font-size: remy(17);
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.35;
+
+}
+.block-title {
+  font-size: remy(20);
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: 'Manrope', sans-serif;
+  color: #fff;
+  margin-bottom: remy(24);
+}
+.accent-span {
+  color: var(--subAc);
+}
+
+.txt-accent {
+  color: var(--ac) !important;
+}
+
+@media (max-width: remy(1199)) {
+  .h1 {
+    font-size: remy(54);
+  }
+  .h2 {
+    font-size: remy(52);
+  }
+}
+
+
+@media (max-width: remy(991)) {
+  .h2 {
+    font-size: remy(48);
+  }
+}
+
+@media (max-width: remy(767)) {
+  .h1 {
+    font-size: remy(32);
+  }
+  .h2 {
+    font-size: remy(42);
+  }
+  .h3 {
+    font-size: remy(26);
+    line-height: 1.19;
+  }
+  .h4 {
+    line-height: 1.2;
+  }
+  .h5 {
+    font-size: remy(26);
+    line-height: 1.19;
+  }
+  .subtitle {
+    font-size: remy(16);
+  }
+}
