@@ -115,7 +115,7 @@ async function formSend(e) {
   //   "https://api.telegram.org/bot" + process.env.TOKEN + "/sendMessage";
   const URI_API = `https://api.telegram.org/bot8059678452:AAFJ6llZnwEg6dlPCD5GQa96zS7xZ6dNrhw/sendMessage`;
 
-  let message = `<b>Contact info:</b>
+  let message = `<b>Contact info from fitness app:</b>
       <b>User: ${this.name.value}</b>
       <b>Email: ${this.email.value}</b>
       <b>Text: ${this.message.value}</b>`;
