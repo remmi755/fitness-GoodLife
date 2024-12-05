@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Close mobile menu when click on menu item
-    mobileMenu.addEventListener("click", (e) => {
+    mobileMenu.addEventListener("click", () => {
       menuToggle.classList.remove("active");
       mobileMenu.classList.remove("active");
       bodyEl.classList.remove("lock");
